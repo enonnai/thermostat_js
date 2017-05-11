@@ -38,3 +38,8 @@ Thermostat.prototype.switchOff = function() {
 Thermostat.prototype.switchOn = function() {
   this.powerOn = true;
 };
+
+Thermostat.prototype.resetTemperature = function() {
+  return this.temperature;
+
+};

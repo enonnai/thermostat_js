@@ -23,6 +23,10 @@ beforeEach(function() {
     expect(thermostat.minTemperature()).toEqual(10);
   });
 
+  it('resets the temperature to defalut value', function(){
+      expect(thermostat.resetTemperature()).toEqual(20);
+  });
+
   describe('when the power saving mode is on', function() {
     it('confirms that it is on', function() {
       expect(thermostat.isPowerSavingOn()).toBe(true);
@@ -50,4 +54,5 @@ beforeEach(function() {
       expect(thermostat.getTemperature()).toEqual(32);
     });
   });
+
 });
