@@ -34,15 +34,20 @@ beforeEach(function() {
       }
       expect(thermostat.getTemperature()).toEqual(25);
     });
-
-
   });
 
   describe('when the power saving mode is off', function() {
     it('confirms that it is off', function() {
-      expect(thermostat.isPowerSavingOff()).toBe(false);
+      thermostat.switchOff();
+      expect(thermostat.isPowerSavingOn()).toBe(false);
     });
 
+    it('does not reach beyond 32 degrees when PSM off', function(){
+      thermostat.switchOff();
+      for(var i=0; i < 13; i++) {
+        thermostat.up();
+      }
+      expect(thermostat.getTemperature()).toEqual(32);
+    });
   });
-
 });
