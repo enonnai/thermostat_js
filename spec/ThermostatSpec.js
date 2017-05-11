@@ -19,4 +19,9 @@ beforeEach(function() {
     expect(thermostat.getTemperature()).toEqual(19);
   });
 
+  it('displays the minimum temperature', function(){
+    expect(thermostat.minTemperature()).toEqual(10);
+
+})
+
 });
