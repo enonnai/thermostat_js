@@ -21,7 +21,13 @@ beforeEach(function() {
 
   it('displays the minimum temperature', function(){
     expect(thermostat.minTemperature()).toEqual(10);
+  });
 
-})
+  describe('when the power saving mode is on', function() {
+    it('confirms that it is on', function() {
+      expect(thermostat.isPowerSavingOn()).toBe(true);
+    });
+
+  });
 
 });
