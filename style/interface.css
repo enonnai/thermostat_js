@@ -22,8 +22,10 @@ body {
 
 .top button {
     position: relative;
-    background-color: blue;
+    background-color: #8B008B;
     font-size: 20px;
-    width: 50px;
-    margin-left: 50px;
+    width: 60px;
+    margin-left: 30px;
+    border-style: dashed;
+    box-shadow: 10px 10px 5px #9400D3;
 }
