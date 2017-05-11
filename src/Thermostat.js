@@ -1,6 +1,7 @@
 function Thermostat(){
   this.temperature = 20;
   this.MINIMUM_TEMPERATURE = 10;
+
   this.powerOn = true;
 }
 
@@ -10,6 +11,9 @@ return this.temperature;
 };
 
 Thermostat.prototype.up = function () {
+  if(this.temperature == 25) {
+    return;
+  }
     return this.temperature +=1;
 };
 

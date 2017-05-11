@@ -28,6 +28,14 @@ beforeEach(function() {
       expect(thermostat.isPowerSavingOn()).toBe(true);
     });
 
+    it('does not reach beyond 25 degrees when PSM on', function(){
+      for(var i=0; i < 6; i++) {
+        thermostat.up();
+      }
+      expect(thermostat.getTemperature()).toEqual(25);
+    });
+
+
   });
 
   describe('when the power saving mode is off', function() {
