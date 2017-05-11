@@ -21,11 +21,14 @@ Thermostat.prototype.up = function () {
 };
 
 Thermostat.prototype.down = function () {
+  if (this.temperature == 10) {
+    return this.temperature;
+  }
   return this.temperature -= 1;
 };
 
 Thermostat.prototype.minTemperature = function() {
-  return this.temperature = this.MINIMUM_TEMPERATURE;
+  return this.MINIMUM_TEMPERATURE;
 };
 
 Thermostat.prototype.isPowerSavingOn = function () {
@@ -41,7 +44,7 @@ Thermostat.prototype.switchOn = function() {
 };
 
 Thermostat.prototype.resetTemperature = function() {
-  return   this.DEFAULT_TEMPERATURE;
+  return this.temperature = 20;
 
 };
 
