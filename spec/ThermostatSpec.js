@@ -55,4 +55,15 @@ beforeEach(function() {
     });
   });
 
+  describe('Energy Usage', function() {
+    it('shows the low usage', function(){
+      for(i=0; i < 3; i++){
+        thermostat.down();
+      }
+      expect(thermostat.energyUsage()).toEqual('low-usage');
+    })
+
+
+  });
+
 });

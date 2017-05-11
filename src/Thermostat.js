@@ -43,3 +43,9 @@ Thermostat.prototype.resetTemperature = function() {
   return this.temperature;
 
 };
+
+Thermostat.prototype.energyUsage = function() {
+  if(this.temperature < 18) {
+    return "low-usage";
+  }
+};
