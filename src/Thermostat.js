@@ -2,6 +2,7 @@ function Thermostat(){
   this.temperature = 20;
   this.MINIMUM_TEMPERATURE = 10;
   this.powerOn = true;
+  this.DEFAULT_TEMPERATURE = 20;
 }
 
 
@@ -40,7 +41,7 @@ Thermostat.prototype.switchOn = function() {
 };
 
 Thermostat.prototype.resetTemperature = function() {
-  return this.temperature;
+  return   this.DEFAULT_TEMPERATURE;
 
 };
 
