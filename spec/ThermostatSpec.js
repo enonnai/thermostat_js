@@ -61,9 +61,21 @@ beforeEach(function() {
         thermostat.down();
       }
       expect(thermostat.energyUsage()).toEqual('low-usage');
-    })
+    });
 
+    it('shows the medium usage', function(){
+      for(i=0; i < 4; i++){
+        thermostat.up();
+      }
+      expect(thermostat.energyUsage()).toEqual('medium-usage');
+    });
 
+    it('shows the high usage', function(){
+      for(i=0; i < 5; i++){
+        thermostat.up();
+      }
+      expect(thermostat.energyUsage()).toEqual('high-usage');
+    });
   });
 
 });
