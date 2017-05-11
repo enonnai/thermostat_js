@@ -21,14 +21,14 @@ Thermostat.prototype.up = function () {
 };
 
 Thermostat.prototype.down = function () {
-  if (this.temperature == 10) {
+  if ( this.temperature == 10) {
     return this.temperature;
   }
   return this.temperature -= 1;
 };
 
 Thermostat.prototype.minTemperature = function() {
-  return this.MINIMUM_TEMPERATURE;
+  return this.temperature = this.MINIMUM_TEMPERATURE;
 };
 
 Thermostat.prototype.isPowerSavingOn = function () {
