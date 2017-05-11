@@ -9,4 +9,9 @@ beforeEach(function() {
     expect(thermostat.getTemperature()).toEqual(20);
   });
 
+  it('increases the temperature ', function() {
+    thermostat.up();
+    expect(thermostat.getTemperature()).toEqual(21);
+  });
+
 });
