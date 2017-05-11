@@ -1,11 +1,29 @@
+body {
+    background-color: 		#20B2AA;
+}
+
 .low-usage {
   color: green;
+  font-size: 40px;
+  text-align: center;
 }
 
 .medium-usage {
   color: black;
+  font-size: 40px;
+  text-align: center;
 }
 
 .high-usage {
   color: red;
+  font-size: 40px;
+  text-align: center;
+}
+
+.top button {
+    position: relative;
+    background-color: blue;
+    font-size: 20px;
+    width: 50px;
+    margin-left: 50px;
 }
