@@ -30,4 +30,11 @@ beforeEach(function() {
 
   });
 
+  describe('when the power saving mode is off', function() {
+    it('confirms that it is off', function() {
+      expect(thermostat.isPowerSavingOff()).toBe(false);
+    });
+
+  });
+
 });

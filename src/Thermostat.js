@@ -24,3 +24,7 @@ Thermostat.prototype.minTemperature = function() {
 Thermostat.prototype.isPowerSavingOn = function () {
   return this.powerOn;
 };
+
+Thermostat.prototype.isPowerSavingOff = function () {
+  return this.powerOff = false;
+};
