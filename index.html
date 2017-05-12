@@ -22,20 +22,24 @@
     <section>
     <h1 id = 'temperature'></h1>
       <p>
-        <div class ='top'>
+
+        <span id='power-saving-status'>Press buttons to switch PSM on/off:
+          <div class="on">
+        <button  id ='power-saving-on'> PSM on </button>
+      </div>
+      <div class="off">
+        <br>
+        <button id ='power-saving-off'> PSM off</button>
+      </div>
+      </span>
+      <br>
+        <div class ='fancy'>
         <button id ='temperature-up'> &uarr; </button>
         <button id ='temperature-down'> &darr; </button>
         <button id ='temperature-reset'> &#8635; </button>
-        <label for="power-saving-on">
-        <span id='power-saving-status'></span>
-        Press buttons to switch PSM on or off:
-        <button id ='power-saving-on'> PSM on </button>
-        <button id ='power-saving-off'> PSM off</button>
-      </label>
-      <br>
+      </div>
       <br>
       <img src="https://cdn.andertoons.com/img/toons/cartoon7442.png">
-      </div>
       </p>
     </section>
     <script src="src/Thermostat.js"></script>
