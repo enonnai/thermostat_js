@@ -35,8 +35,4 @@ function updateTemperature() {
   $('#temperature').attr('class', thermostat.energyUsage());
 }
 
-function changeCity(){
-  $('#current-city').text
-}
-
 });
